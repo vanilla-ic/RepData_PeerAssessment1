@@ -53,7 +53,7 @@ Make a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and 
 byinterval <- aggregate(steps ~ interval, act, mean)
 colnames(byinterval) <- c("interval", "stepsavg")
 plot(byinterval$interval, byinterval$stepsavg, type="l", 
-     main="Average number of steps taken in each 5 min interval", col="green")
+     main="Average number of steps taken in each 5 min interval", col="green", xlab ="interval", ylab = "average number of steps")
 ```
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
